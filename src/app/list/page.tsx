@@ -4,7 +4,7 @@ import { wixClientServer } from '@/lib/wixClientServer'
 import Image from 'next/image'
 import React, { Suspense } from 'react'
 
-const list = async ({ searchParams }: { searchParams: any }) => {
+const List = async ({ searchParams }: { searchParams: any }) => {
     const wixClient = await wixClientServer()
     const cat = await wixClient.collections.getCollectionBySlug(searchParams.cat || 'all-products');
 
@@ -39,4 +39,4 @@ const list = async ({ searchParams }: { searchParams: any }) => {
     )
 }
 
-export default list
+export default List

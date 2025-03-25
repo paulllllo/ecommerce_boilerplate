@@ -13,7 +13,7 @@ const modes = {
     VERIFY_EMAIL: 'VERIFY MODE'
 }
 
-const login = () => {
+const Login = () => {
     const wixClient = useWixClient()
     const router = useRouter()
     const cookies = new Cookies()
@@ -23,7 +23,7 @@ const login = () => {
         router.push('/')
     }
 
-    console.log('loggedIn', isLoggedIn)
+    // console.log('loggedIn', isLoggedIn)
 
     const [mode, setMode] = useState(modes.LOGIN)
     const [username, setUsername] = useState('')
@@ -213,4 +213,4 @@ const login = () => {
         )
     }
 
-    export default login
+    export default Login

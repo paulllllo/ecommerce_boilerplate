@@ -35,7 +35,7 @@ const SingleAdd = ({productId, variantId, stockNumber}: {productId: string, vari
                         <span className='text-sm font-semibold'>{number}</span>
                         <span className='text-lg font-semibold cursor-pointer' onClick={() => handleChange('i')}>+</span>
                     </div>
-                    <p className="text-sm">Only <span className="text-pink-300">{stockNumber} items</span> left!<br/>Don't miss it!</p>
+                    <p className="text-sm">Only <span className="text-pink-300">{stockNumber} items</span> left!<br/>Don&apos;t miss it!</p>
                 </div>
                 <button onClick={addToCart} className="px-6 py-3 rounded-3xl ring-2 ring-pink-300 text-pink-300 font-semibold hover:bg-pink-300 hover:text-white disabled:cursor-not-allowed disabled:ring-0 disabled:bg-pink-200" disabled={isLoading}>Add To Cart</button>
             </div>
