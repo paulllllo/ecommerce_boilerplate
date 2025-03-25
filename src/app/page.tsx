@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import CategoryList from "@/components/CategoryList"
 import ListItems from "@/components/ListItems"
 import Slider from "@/components/Slider"
