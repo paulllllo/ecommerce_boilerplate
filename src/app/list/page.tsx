@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import Filter from '@/components/Filter'
 import ListItems from '@/components/ListItems'
 import { wixClientServer } from '@/lib/wixClientServer'
